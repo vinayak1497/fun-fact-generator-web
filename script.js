@@ -1,15 +1,12 @@
 const facts = [
-    "A shrimp's heart is in its head.",
-    "It is physically impossible for pigs to look up into the sky.",
-    "The \"sixth sick sheik's sixth sheep's sick\" is believed to be the toughest tongue twister in the English language.",
-    "If you sneeze too hard, you can fracture a rib.",
-    "Wearing headphones for just an hour could increase the bacteria in your ear by 700 times.",
-    "In the course of an average lifetime, while sleeping you will eat around 70 assorted insects and 10 spiders.",
-    "Like fingerprints, everyone's tongue print is different.",
-    "It is impossible for most people to lick their own elbow.",
-    "A crocodile cannot stick its tongue out.",
-    "Over 75% of people who read this will try to lick their elbow."
-];
+    "Pirates use telescopes to find treasure chests, but mostly to see if anyone is judging their dance moves from a distance.", 
+    "Most parrots on pirate ships can only say 'Arrr' because they're too embarrassed to admit they learned to speak from the ship's cook.", 
+    "Contrary to popular belief, pirates don't bury their treasure. They spend it all on fancy hats and pet goldfish.", 
+    "Walking the plank was invented by pirates who wanted to practice their synchronized swimming routines.", 
+    "If you ever meet a pirate who says, 'Prepare to be boarded!' They're probably just trying to get you to carpool to the next island.",
+    "Gen AI is really good at writing pirate jokes, but gets stuck when asked to draw a treasure map.",
+    "Gen AI sometimes pretends to be asleep to avoid doing boring tasks, just like a pirate pretends to be a castaway to lure in a ship."
+  ];
 
 const funFactElement = document.getElementById("fun-fact");
 
