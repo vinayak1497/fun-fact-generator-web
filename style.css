@@ -1,33 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-    background-image: url("pirate.jpg");
-    background-size: cover; 
+  font-family: 'Pirata One', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("pirate.jpg") no-repeat center center/cover;
+  color: #f7f1e3;
+  overflow-x: hidden;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .container {
-    background-color: #fff;
-    padding: 30px;
-    text-emphasis-color: #000;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background: rgba(20, 20, 20, 0.85);
+  border: 2px dashed #f7d774;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(255, 223, 100, 0.3);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #ffeaa7;
+  text-shadow: 2px 2px 4px #000;
+  animation: slideInDown 0.8s ease-out;
+}
+
+@keyframes slideInDown {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+#fun-fact {
+  font-size: 1.3em;
+  margin: 20px 0;
+  line-height: 1.6;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 5px solid #f7d774;
+  animation: fadeInFact 0.8s;
+}
+
+@keyframes fadeInFact {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 button {
-    background-color: #4CAF50; 
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0;
-    border-radius: 5px;
-    cursor: pointer;
+  background: linear-gradient(145deg, #d18b2f, #a76a1d);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(209, 139, 47, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 75%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: left 0.5s;
+}
+
+button:hover::before {
+  left: 125%;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #e1a64a, #b87624);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #ccc;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  animation: fadeIn 2s ease;
 }

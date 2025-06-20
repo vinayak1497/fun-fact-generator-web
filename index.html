@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun Fact Generator</title>
-    <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pirate Fun Fact Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Fun Fact Time!</h1>
-        <p id="fun-fact"></p> 
-        <button onclick="getNewFact()">New Fact</button>
+  <div class="container">
+    <h1>Pirate Fun Facts! ⚓️</h1>
+    <p id="fun-fact"></p>
+    <div class="controls">
+      <button onclick="getNewFact()">🌊 New Fact</button>
+      <button onclick="speakFact()">🎤 Hear It</button>
+      <button onclick="copyFact()">📋 Copy</button>
     </div>
+  </div>
 
-    <script src="script.js"></script> 
+  <footer>
+    <p>&copy; 2025 Pirate Crew | Built with ❤️ for fun!</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
